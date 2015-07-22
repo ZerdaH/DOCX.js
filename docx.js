@@ -77,7 +77,7 @@ var docx = {
               k = tempNode.childNodes.length;
               while (k--) {
                 if (tempNode.childNodes[k].getAttribute && tempNode.childNodes[k].getAttribute('Id') === id) {
-                  val = '<img src="data:image/png;base64,' + JSZipbase64.encode(input.files['word/' + tempNode.childNodes[k].getAttribute('Target')].asText()) + '">';
+                  //val = '<img src="data:image/png;base64,' + JSZip.base64.encode(input.files['word/' + tempNode.childNodes[k].getAttribute('Target')].asText()) + '">'; //doesn't always terminate
                   break;
                 }
               }
